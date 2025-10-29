@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Profile Sederhana</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/1200x/d6/07/a7/d607a7b06836eaeb0a83c402cc90fd3b.jpg"/>
+  </head>
+  <body>
+    <nav class="bg-fuchsia-300 backdrop-blur border-b border-yellow-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a
+            class="flex items-center justify-between gap-2 text-xl text-amber-950"
+            href=""
+            >RIZKA</a>
+
+          <!-- button hamburger -->
+          <button
+            id="hamburger"
+            class="md:hidden p-2 rounded hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu"
+          >
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <!-- ini utk layar website -->
+          <div id="main-menu" class="hidden md:flex md:items-center md:gap-2">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left">
+              <a href="#about" href="" class="text-pink-800 hover:text-gray-700 uppercase"
+                >about me</a>
+
+              <a href="#about" class="text-pink-800 hover:text-gray-700 uppercase"
+                >What i do</a>
+
+              <a href="#about" class="text-pink-800 hover:text-gray-700 uppercase">about me</a>
+              
+              <a href="#about" class="text-pink-800 hover:text-gray-700 uppercase"
+                >about me</a>
+                
+              <a href="#about" class="text-pink-800 hover:text-gray-700 uppercase"
+                >about me</a
+              >
+            </div>
+            <a
+              href=""
+              class="mt-3 md:mt-0 inline-flex items-center justify-center px-4 py-2 bg-gray-500 text-white rounded-lg font-semibold hover:bg-pink-800 uppercase"
+              >contact me</a
+            >
+          </div>
+        </div>
+
+        <!-- ini navbar but layar hp -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden border-t border-gray-500 py-2"
+          role="region"
+          aria-label="mobile-menu"
+        >
+          <a
+            href=""
+            class="block px-3 py-2 text-pink-800 hover:text-gray-500 uppercas"
+            >about me</a
+          >
+          <a
+            href=""
+            class="block px-3 py-2 text-pink-800 hover:text-gray-500 uppercase"
+            >what i do</a
+          >
+          <a
+            href=""
+            class="block px-3 py-2 text-pink-800 hover:text-gray-500 uppercase"
+            >portofolio</a
+          >
+          <a
+            href=""
+            class="block px-3 py-2 text-pink-800 hover:text-gray-500 uppercase"
+            >skill</a
+          >
+          <a
+            href=""
+            class="block px-3 py-2 text-pink-800 hover:text-gray-500 uppercase"
+            >blog</a
+          >
+          <a
+            href=""
+            class="block px-3 py-2 text-pink-800 hover:text-gray-500 uppercase"
+            >contact me</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- section about me -->
+    <section id="about" class="bg-gray-500">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-2 items-center"
+      >
+        <div
+          class="order-2 lg:order-2 border-[12px] border-pink-800 rounded-xl shadow-xl w-[500px] h-[500px]"
+        >
+          <img src="images/YUHU.png" alt="" class="w-full h-full" />
+        </div>
+        <div class="order-1 lg:order-1 lg:pr-10">
+          <h1 class="text-3xl sm:text-5xl font-bold leading-tight">
+            Halo! I'm Rizka Azzah Khoirunnisa
+          </h1>
+          <h2 class="text-xl sm:text-2xl mt-3">I'm Web Developer</h2>
+          <p class="mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+            quisquam quia labore ipsa eos impedit?
+          </p>
+          <div class="flex items-center gap-3 mt-6">
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-lg bg-pink-400 hover:bg-pink-800 px-4 py-4 text-white "
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
+            </a>
+            <a href="" class="inline-flex items-center justify-center rounded-lg bg-pink-400 hover:bg-pink-800 px-4 py-4 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
+            </a>
+            <a href="" class="inline-flex items-center justify-center rounded-lg bg-pink-400 hover:bg-pink-800 px-4 py-4 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
+            </a>
+            <a href="" class="inline-flex items-center justify-center rounded-lg bg-pink-400 hover:bg-pink-800 px-4 py-4 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section what i do -->
+     <section id="whatiDo" class="bg-[#A53860]">
+      <div
+        class="max-x-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#3A0519]"
+      >
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-bold text-pink-800 underline underline-offset-8 decoration-gray-600 decoration-4 uppercase tracking-widest"
+          >
+            What I Do
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- pertama -->
+          <div class="rounded-xl bg-[#670D2F]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div 
+                class="w-10 h-10 grid rounded-full bg-[#EF88AD] text-white place-items-center"
+              >
+                <i class="fa-solid fa-computer"></i>
+              </div>
+              <div>
+                <h3 class="text-black text-lg tracking-wider font-bold">
+                  Web design
+                </h3>
+              </div>
+            </div>
+            <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates qui voluptatum ad atque tempora.</p>
+          </div>
+          <!-- kedua -->
+          <div class="rounded-xl bg-[#670D2F]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid rounded-full bg-[#EF88AD] text-white place-items-center"
+              >
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div>
+                <h3 class="text-white text-lg tracking-wider font-bold">
+                  App Design
+                </h3>
+              </div>
+            </div>
+            <p class="text-white">halo saya nabila,, saya mahasiswi jurusan programmer dan saya bekerja juga di bidang app mobile, seperti pembuatan aplikasi yang menarik dan bermanfaat untuk perusahaan.</p>
+          </div>
+          <!-- ketiga -->
+          <div class="rounded-xl bg-[#670D2F]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid rounded-full bg-[#EF88AD] text-white place-items-center"
+              >
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+              <div>
+                <h3 class="text-white text-lg tracking-wider font-bold">
+                  UX/UI
+                </h3>
+              </div>
+            </div>
+            <p class="text-white">halo saya nabila,, saya mahasiswi jurusan programmer dulu di jenjang smk aku belajar ui/ux dan aku menerima job untuk para pengusaha baru/untuk umkm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- ini script utk hamburger -->
+    <script>
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-menu");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
